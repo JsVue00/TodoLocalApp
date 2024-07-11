@@ -8,6 +8,11 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: HomeView
+    },
+    {
+      path: '/provide-inject',
+      name: 'provide-inject',
+      component:() => import("@/views/ProvideInjectView.vue"),
     }
   ]
 })

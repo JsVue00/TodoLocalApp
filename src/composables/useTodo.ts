@@ -33,7 +33,7 @@ export default function useTodo() {
     const titleValidate = (rule: any, value: any, callback: any) => {
         if (value === '') {
             callback(new Error('Title is required'));
-        } else if (!/^[a-zA-Z]+$/.test(value)) {
+        } else if (!/^[a-zA-Z _]+$/.test(value)) {
             callback(new Error('Title is allowed to input only alphabet letters.'));
         } else {
             callback();
