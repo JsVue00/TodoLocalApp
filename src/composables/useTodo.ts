@@ -9,7 +9,7 @@ export default function useTodo() {
     const tasks = ref<ITask[]>([]);
     const isEdit = ref(false);
 
-    const tableHeader = ['Title', 'Status', 'Due Date', 'Modified Date', 'Actions'];
+    const tableHeader:string[] = ['Title', 'Status', 'Due Date', 'Modified Date', 'Actions'];
 
     const closeDialog = () => {
         dialogFormVisible.value = false;
